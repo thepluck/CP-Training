@@ -1,0 +1,13 @@
+Nếu biết được các đoạn con liên tiếp dài M có thể tô được
+=> tham lam => đưa về bài toán so khớp
+
+Gọi P(k) là tập các công nhân ưu thích màu k
+Theo đề bài tổng |P(k)| <= 400000 => |P(k)| <= 200 với mọi k
+
+dịch số thứ tự các công nhân yêu thích C(i) đi i đơn vị qua trái
+
+đoạn con dài M tô được <=> tồn tại một số thứ tự xuất hiện đúng M lần
+
+Dùng mảng cnt để duy trì.
+
+Đpt O(N * 200)

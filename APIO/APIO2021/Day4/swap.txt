@@ -1,0 +1,8 @@
+Xét 1 vùng liên thông bất kì chứa đỉnh x và y
+có thể đi được khi và chỉ khi vùng này ko phải 1 chain
+
+sort lại các cạnh 
+Dùng cây DSU, với mỗi gốc lưu lại trọng số cạnh nhỏ nhất val[u] mà khi thêm vào thì subtree đó không còn là 1 chain
+
+leo từ root = lca(x, y) trên cây dsu, leo đến khu ko còn là chain 
+lấy max các cạnh trên dường đi và val[root]

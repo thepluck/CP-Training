@@ -1,0 +1,10 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+	freopen("input.txt", "r", stdin);
+	char c;
+	while (cin >> c) {
+		cerr << "# dm\n";
+	}
+}
