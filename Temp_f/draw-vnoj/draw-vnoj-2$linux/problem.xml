@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="2" short-name="draw-vnoj" url="https://polygon.codeforces.com/p9VOOuF/two_sides/draw-vnoj">
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1">
+        <testset name="tests">
+            <time-limit>1000</time-limit>
+            <memory-limit>268435456</memory-limit>
+            <test-count>21</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test description="Archive &quot;t.zip&quot;; file &quot;ex_archi1.inp&quot;" method="manual" sample="true"/>
+                <test description="Archive &quot;t.zip&quot;; file &quot;archi1.inp&quot;" method="manual"/>
+                <test description="Archive &quot;t.zip&quot;; file &quot;archi2.inp&quot;" method="manual"/>
+                <test description="Archive &quot;t.zip&quot;; file &quot;archi3.inp&quot;" method="manual"/>
+                <test description="Archive &quot;t.zip&quot;; file &quot;archi4.inp&quot;" method="manual"/>
+                <test description="Archive &quot;t.zip&quot;; file &quot;archi5.inp&quot;" method="manual"/>
+                <test description="Archive &quot;t.zip&quot;; file &quot;archi6.inp&quot;" method="manual"/>
+                <test description="Archive &quot;t.zip&quot;; file &quot;archi7.inp&quot;" method="manual"/>
+                <test description="Archive &quot;t.zip&quot;; file &quot;archi8.inp&quot;" method="manual"/>
+                <test description="Archive &quot;t.zip&quot;; file &quot;archi9.inp&quot;" method="manual"/>
+                <test description="Archive &quot;t.zip&quot;; file &quot;archi10.inp&quot;" method="manual"/>
+                <test description="Archive &quot;t.zip&quot;; file &quot;archi11.inp&quot;" method="manual"/>
+                <test description="Archive &quot;t.zip&quot;; file &quot;archi12.inp&quot;" method="manual"/>
+                <test description="Archive &quot;t.zip&quot;; file &quot;archi13.inp&quot;" method="manual"/>
+                <test description="Archive &quot;t.zip&quot;; file &quot;archi14.inp&quot;" method="manual"/>
+                <test description="Archive &quot;t.zip&quot;; file &quot;archi15.inp&quot;" method="manual"/>
+                <test description="Archive &quot;t.zip&quot;; file &quot;archi16.inp&quot;" method="manual"/>
+                <test description="Archive &quot;t.zip&quot;; file &quot;archi17.inp&quot;" method="manual"/>
+                <test description="Archive &quot;t.zip&quot;; file &quot;archi18.inp&quot;" method="manual"/>
+                <test description="Archive &quot;t.zip&quot;; file &quot;archi19.inp&quot;" method="manual"/>
+                <test description="Archive &quot;t.zip&quot;; file &quot;archi20.inp&quot;" method="manual"/>
+            </tests>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/check_draw.cpp" type="cpp.g++17"/>
+            </executable>
+            <executable>
+                <source path="files/valid_draw.cpp" type="cpp.g++17"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker type="testlib">
+            <source path="files/check_draw.cpp" type="cpp.g++17"/>
+            <copy path="check.cpp" type="cpp.g++17"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/valid_draw.cpp" type="cpp.g++17"/>
+                <testset>
+                    <test-count>0</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests/>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="accepted">
+                <source path="solutions/ac-fat.cpp" type="cpp.g++17"/>
+            </solution>
+            <solution tag="main">
+                <source path="solutions/draw.cpp" type="cpp.g++17"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+</problem>

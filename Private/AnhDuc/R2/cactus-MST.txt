@@ -1,0 +1,4 @@
+cactus N M
+u v a b
+
+spanning tree: S(a) * S(b) min

@@ -1,0 +1,1 @@
+cho 2 mang a, b. chia a, b thanh k phan sao cho tong 2 phan tuong ung cua a va b >= mot so x cho truoc. tim max k (co the dao lai cho k tim p).
