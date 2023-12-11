@@ -1,0 +1,1 @@
+long long count_pair(int N);
